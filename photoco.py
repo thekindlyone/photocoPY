@@ -20,6 +20,5 @@ def copytodir(fn):
     
 if __name__ == '__main__':
     dir=os.getcwd()
-    if len(sys.argv)>1: dir=sys.argv[-1]
-    photos=filter(lambda x:os.path.splitext(x)[-1].lower() in ['.png','.jpg','.bmp','.jpeg'],[os.path.join(dir,each) for each in os.listdir(dir)])
-    log=map(copytodir,photos)
+    if len(sys.argv)>1: dir=sys.argv[-1]    
+    log=map(copytodir,filter(lambda x:os.path.splitext(x)[-1].lower() in ['.png','.jpg','.bmp','.jpeg'],[os.path.join(dir,each) for each in os.listdir(dir)]))
