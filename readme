@@ -1,0 +1,28 @@
+photocoPY
+
+
+used without command line argument, moves photographs in the current working directory to new directory named as <mmm> <yyyy> based on last modified date of file.
+for a file last modified on January 2014, the destination directory will be 'Jan 2013' 
+Can also take a directory path as cammnd line argument and work on that directory instead.
+
+Demonstration:
+d:\pythonary\photocoPY>python photoco.py d:/pics
+d:/pics\20131201_195555.jpg copied to dir  d:/pics\Dec 2013 (created now)
+d:/pics\20131201_195603.jpg  copied to dir  d:/pics\Dec 2013
+d:/pics\adama.jpg copied to dir  d:/pics\Aug 2013 (created now)
+d:/pics\biryani.jpg copied to dir  d:/pics\Jun 2013 (created now)
+d:/pics\dumpling1.jpg copied to dir  d:/pics\Oct 2013 (created now)
+d:/pics\dumpling2.jpg  copied to dir  d:/pics\Oct 2013
+d:/pics\IMAG0059.jpg copied to dir  d:/pics\Nov 2013 (created now)
+d:/pics\IMAG0060.jpg  copied to dir  d:/pics\Nov 2013
+d:/pics\IMAG0061.jpg  copied to dir  d:/pics\Nov 2013
+d:/pics\me.jpg  copied to dir  d:/pics\Nov 2013
+d:/pics\me.png  copied to dir  d:/pics\Dec 2013
+d:/pics\roast.jpg  copied to dir  d:/pics\Jun 2013
+d:/pics\sherlock.PNG copied to dir  d:/pics\Jan 2014 (created now)
+d:/pics\ssh.png  copied to dir  d:/pics\Jan 2014
+d:/pics\wind1.jpg  copied to dir  d:/pics\Aug 2013
+d:/pics\wind2.jpg  copied to dir  d:/pics\Aug 2013
+d:/pics\wind3.jpg  copied to dir  d:/pics\Aug 2013
+d:/pics\wind4.jpg  copied to dir  d:/pics\Aug 2013
+d:/pics\zen_of_python.png  copied to dir  d:/pics\Dec 2013
