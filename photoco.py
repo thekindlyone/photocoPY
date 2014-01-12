@@ -1,5 +1,4 @@
 import os, time, sys, shutil
-
 def copytodir(fn):
     timeinfo= time.ctime(os.stat(fn).st_mtime).split(' ')
     newdir= os.path.join(os.path.dirname(fn),timeinfo[1]+' '+timeinfo[-1])
@@ -20,5 +19,5 @@ def copytodir(fn):
     
 if __name__ == '__main__':
     dir=os.getcwd()
-    if len(sys.argv)>1: dir=sys.argv[-1]    
-    log=map(copytodir,filter(lambda x:os.path.splitext(x)[-1].lower() in ['.png','.jpg','.bmp','.jpeg'],[os.path.join(dir,each) for each in os.listdir(dir)]))
+    if len(sys.argv)>1: dir=sys.argv[-1]
+    log=map(copytodir,(os.path.join(dir,each) for each in os.listdir(dir) if os.path.splitext(each)[-1].lower() in ['.png','.jpg','.bmp','.jpeg']))
